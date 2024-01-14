@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 public class HomePage implements ActionListener {
 
-    private HomePageUI homePageUI;
+    private final HomePageUI homePageUI;
 
     HomePage(){
         this.homePageUI = new HomePageUI();

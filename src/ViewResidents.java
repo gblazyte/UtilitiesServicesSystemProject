@@ -10,13 +10,10 @@ import java.util.List;
 public class ViewResidents implements ActionListener{
     ViewResidentsUI viewResidentsUI = new ViewResidentsUI();
     ViewResidents(){
-
         viewResidentsUI.getSearchBtn().addActionListener(this);
         viewResidentsUI.getUpdateBtn().addActionListener(this);
         viewResidentsUI.getBackBtn().addActionListener(this);
-
     }
-
     @Override
     public void actionPerformed(ActionEvent e) {
         JButton searchBtn = viewResidentsUI.getSearchBtn();
@@ -33,8 +30,6 @@ public class ViewResidents implements ActionListener{
         } else if (e.getSource()== backBtn) {
             viewResidentsUI.page.dispose();
             HomePage homePage = new HomePage();
-
         }
-
     }
 }

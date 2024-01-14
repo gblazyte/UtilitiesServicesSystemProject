@@ -3,12 +3,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class DatabaseStatement {
-    private Connection connection;
     //Represents a statement that can be executed against the database
-    private Statement statement;
+    private final Statement statement;
 
     public DatabaseStatement(Connection connection){
-        this.connection = connection;
         try {
             //This statement is used for executing SQL queries against the database
             statement = connection.createStatement();

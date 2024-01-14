@@ -24,14 +24,9 @@ public class AddResident implements ActionListener {
 
             addResidentDatabase.addResident(name,lastName,resGroup);
 
-            addResidentUI.page.dispose();
-            HomePage homePage = new HomePage();
-
-
-        } else {
-            addResidentUI.page.dispose();
-            HomePage homePage = new HomePage();
         }
+        addResidentUI.page.dispose();
+        HomePage homePage = new HomePage();
 
     }
 }

@@ -8,17 +8,14 @@ public class LoginUI extends MainUI{
     JLabel passwordLabel = new JLabel("Password");
     JTextField passwordTextField = new JTextField();
     JButton loginButton = new JButton("Login");
-
     public JButton getLoginBtn() {
         return loginButton;
     }
-
 
     LoginUI() {
         super("login",1100,650);
         initializeUI();
     }
-
 
     private void initializeUI(){
         usernameLabel.setBounds(40,20,100,30);

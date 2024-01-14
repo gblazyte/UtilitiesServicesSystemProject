@@ -10,10 +10,7 @@ public class RemoveResidents implements ActionListener {
     RemoveResidents(){
         removeResidentsUI.getRemoveResidentBtn().addActionListener(this);
         removeResidentsUI.getBackBtn().addActionListener(this);
-
-
     }
-
     @Override
     public void actionPerformed(ActionEvent e) {
         JButton removeResidentBtn = removeResidentsUI.getRemoveResidentBtn();
@@ -25,6 +22,5 @@ public class RemoveResidents implements ActionListener {
             removeResidentsUI.page.dispose();
             HomePage homePage = new HomePage();
         }
-
     }
 }

@@ -4,9 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class LaunchPage implements ActionListener {
-
-    private LaunchPageUI launchPageUI;
-
+    private final LaunchPageUI launchPageUI;
 
     LaunchPage(){
         this.launchPageUI = new LaunchPageUI();

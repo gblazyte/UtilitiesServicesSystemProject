@@ -12,14 +12,11 @@ public class RemoveResidentsUI extends MainUI{
     JLabel resNameLabel = new JLabel();
     JLabel resGroupLabel = new JLabel();
     Choice lastNameChoice = new Choice();
-
     JButton removeResidentBtn = new JButton("Remove Resident");
     JButton backBtn = new JButton("Back");
-
     public JButton getRemoveResidentBtn() {
         return removeResidentBtn;
     }
-
     public JButton getBackBtn() {
         return backBtn;
     }

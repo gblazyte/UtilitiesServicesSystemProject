@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class MainUI {
-    //protected WindowSettings windowSettings = WindowSettings.getInstance();
+
     protected JFrame page;
     MainUI(String title, int width, int height){
         WindowCreator windowCreator = new WindowCreator();

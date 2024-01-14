@@ -7,13 +7,10 @@ public class UpdateServiceUI extends MainUI{
     JLabel headingSer = new JLabel("Update service price");
     JLabel serviceLabel = new JLabel("Service: ");
     JLabel serviceTextLabel = new JLabel();
-
     JLabel updatePriceLabel = new JLabel("Update service price: ");
     JTextField updatePriceTextField = new JTextField();
-
     JLabel managerLabel = new JLabel("Manager: ");
     JLabel managerTextLabel = new JLabel();
-
     JLabel resGroupLabel = new JLabel("Resident Group: ");
     JLabel groupTextField = new JLabel();
     JButton updateServiceBtn = new JButton("Update Service");
@@ -22,7 +19,6 @@ public class UpdateServiceUI extends MainUI{
     public void setManager(String managerName) {
         this.manager = managerName;
     }
-
     public JButton getBackBtn() {
         return backBtn;
     }
@@ -89,7 +85,6 @@ public class UpdateServiceUI extends MainUI{
     }
 
     public void updateServiceDetailsInDatabase(){
-
         String service = serviceTextLabel.getText();
         String price = updatePriceTextField.getText();
         String resGroup = groupTextField.getText();

@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 
 public class Login implements ActionListener {
-    private LoginUI loginUI;
+    private final LoginUI loginUI;
 
     Login(){
         this.loginUI = new LoginUI();

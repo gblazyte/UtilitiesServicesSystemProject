@@ -5,7 +5,6 @@ import java.awt.*;
 import java.sql.ResultSet;
 
 public class ResidentServiceUI extends MainUI{
-
     JTable table = new JTable();
     JLabel searchLabel = new JLabel("Search a service by group: ");
     Choice groupName = new Choice();
@@ -18,7 +17,6 @@ public class ResidentServiceUI extends MainUI{
     public JButton getSearchBtn() {
         return searchBtn;
     }
-
     public JButton getBackBtn() {
         return backBtn;
     }

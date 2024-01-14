@@ -24,13 +24,9 @@ public class AddService implements ActionListener {
 
             addServiceDatabase.addService(service,price,manager,resGroup);
 
-            addServiceUI.page.dispose();
-            HomePage homePage = new HomePage();
-
-        } else {
-            addServiceUI.page.dispose();
-            HomePage homePage = new HomePage();
         }
+        addServiceUI.page.dispose();
+        HomePage homePage = new HomePage();
 
     }
 }

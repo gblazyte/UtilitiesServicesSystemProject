@@ -5,33 +5,21 @@ import java.awt.*;
 import java.sql.ResultSet;
 
 public class ViewResidentsUI extends MainUI{
-
-    private JTable table = new JTable();
-    private JLabel searchLabel = new JLabel("Search a resident by Last Name: ");
-
-    private Choice resLastName = new Choice();
-
-
-    private JButton searchBtn = new JButton("Search");
-
-
-    private JButton updateBtn = new JButton("Update");
-
-
-    private JButton backBtn = new JButton("Back");
-
+    private final JTable table = new JTable();
+    private final JLabel searchLabel = new JLabel("Search a resident by Last Name: ");
+    private final Choice resLastName = new Choice();
+    private final JButton searchBtn = new JButton("Search");
+    private final JButton updateBtn = new JButton("Update");
+    private final JButton backBtn = new JButton("Back");
     public JButton getSearchBtn() {
         return searchBtn;
     }
-
     public JButton getUpdateBtn() {
         return updateBtn;
     }
-
     public JButton getBackBtn() {
         return backBtn;
     }
-
     public JTable getTable() {
         return table;
     }
@@ -39,11 +27,9 @@ public class ViewResidentsUI extends MainUI{
         return resLastName;
     }
 
-
     ViewResidentsUI() {
         super("View residents", 1100,650);
         initializeUI();
-
     }
 
     private void initializeUI(){
@@ -91,7 +77,6 @@ public class ViewResidentsUI extends MainUI{
             DatabaseStatement statement = new DatabaseStatement(conn.getConnection());
             ResultSet resultSet = statement.getStatement().executeQuery("select * from residents");
             table.setModel(DbUtils.resultSetToTableModel(resultSet));
-
             while (resultSet.next()){
                 resLastName.add(resultSet.getString("lastName"));
             }

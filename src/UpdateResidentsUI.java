@@ -3,24 +3,17 @@ import java.awt.*;
 import java.sql.ResultSet;
 
 public class UpdateResidentsUI extends MainUI{
-
     private final JLabel headingRes = new JLabel("Update resident details");
-
     private final JLabel updateNameLabel = new JLabel("Update Resident Name: ");
     private final JTextField updateNameTextField = new JTextField();
-
     private final JLabel lastNameLabel = new JLabel("Resident Last Name: ");
     private final JLabel lastNameTextLabel = new JLabel();
-
     private final JLabel resGroupLabel = new JLabel("Resident Group: ");
-
     private final String[] groups = {"860","200","440", "633"};
     private final JComboBox resGroupBox = new JComboBox(groups);
-
     private final JButton updateResidentBtn = new JButton("Update Resident");
     private final JButton backBtn = new JButton("Back");
     public String lastName;
-
     public JButton getBackBtn() {
         return backBtn;
     }

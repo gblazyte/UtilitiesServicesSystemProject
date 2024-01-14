@@ -5,24 +5,21 @@ import java.awt.*;
 import java.sql.ResultSet;
 
 public class ViewServiceUI extends MainUI{
-
-    JTable table = new JTable();
-    JLabel searchLabel = new JLabel("Search a service by Manager: ");
-    Choice managerName = new Choice();
-    JButton searchBtn = new JButton("Search");
-    JButton updateBtn = new JButton("Update");
-    JButton backBtn = new JButton("Back");
+    private final JTable table = new JTable();
+    private final JLabel searchLabel = new JLabel("Search a service by Manager: ");
+    private final Choice managerName = new Choice();
+    private final JButton searchBtn = new JButton("Search");
+    private final JButton updateBtn = new JButton("Update");
+    private final JButton backBtn = new JButton("Back");
     public JButton getSearchBtn() {
         return searchBtn;
     }
     public JButton getUpdateBtn() {
         return updateBtn;
     }
-
     public JButton getBackBtn() {
         return backBtn;
     }
-
 
     ViewServiceUI() {
         super("View services", 1100,650);

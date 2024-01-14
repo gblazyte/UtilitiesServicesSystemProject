@@ -1,9 +1,7 @@
 import javax.swing.*;
 
 public class WindowSettings {
-
     private static WindowSettings instance;
-
     WindowSettings(){
     }
     public static WindowSettings getInstance(){
@@ -20,5 +18,4 @@ public class WindowSettings {
         window.setLocation(200,50);
         return window;
     }
-
 }

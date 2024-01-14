@@ -16,13 +16,11 @@ public class ViewService implements ActionListener {
         viewServiceUI.getBackBtn().addActionListener(this);
 
     }
-
     @Override
     public void actionPerformed(ActionEvent e) {
         JButton searchBtn = viewServiceUI.getSearchBtn();
         JButton updateBtn = viewServiceUI.getUpdateBtn();
         JButton backBtn = viewServiceUI.getBackBtn();
-
 
         if (e.getSource() == searchBtn){
             viewServiceUI.loadServicesForSelectedManager();
@@ -34,9 +32,6 @@ public class ViewService implements ActionListener {
         } else if (e.getSource()== backBtn) {
             viewServiceUI.page.dispose();
             Login login = new Login();
-
         }
-
     }
-
 }

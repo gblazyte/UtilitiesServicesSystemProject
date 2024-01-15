@@ -3,18 +3,17 @@ import java.awt.*;
 import java.sql.ResultSet;
 
 public class UpdateServiceUI extends MainUI{
-
-    JLabel headingSer = new JLabel("Update service price");
-    JLabel serviceLabel = new JLabel("Service: ");
-    JLabel serviceTextLabel = new JLabel();
-    JLabel updatePriceLabel = new JLabel("Update service price: ");
-    JTextField updatePriceTextField = new JTextField();
-    JLabel managerLabel = new JLabel("Manager: ");
-    JLabel managerTextLabel = new JLabel();
-    JLabel resGroupLabel = new JLabel("Resident Group: ");
-    JLabel groupTextField = new JLabel();
-    JButton updateServiceBtn = new JButton("Update Service");
-    JButton backBtn = new JButton("Back");
+    private final JLabel headingSer = new JLabel("Update service price");
+    private final JLabel serviceLabel = new JLabel("Service: ");
+    private final JLabel serviceTextLabel = new JLabel();
+    private final JLabel updatePriceLabel = new JLabel("Update service price: ");
+    private final JTextField updatePriceTextField = new JTextField();
+    private final JLabel managerLabel = new JLabel("Manager: ");
+    private final JLabel managerTextLabel = new JLabel();
+    private final JLabel resGroupLabel = new JLabel("Resident Group: ");
+    private final JLabel groupTextField = new JLabel();
+    private final JButton updateServiceBtn = new JButton("Update Service");
+    private final JButton backBtn = new JButton("Back");
     private String manager;
     public void setManager(String managerName) {
         this.manager = managerName;

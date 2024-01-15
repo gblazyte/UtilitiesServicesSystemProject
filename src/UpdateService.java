@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 
 public class UpdateService implements ActionListener {
 
-    private final UpdateServiceUI updateServiceUI;
+    private UpdateServiceUI updateServiceUI;
 
     UpdateService(String manager){
         this.updateServiceUI = new UpdateServiceUI(manager);

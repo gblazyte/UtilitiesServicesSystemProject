@@ -3,7 +3,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class DatabaseStatement {
-    //Represents a statement that can be executed against the database
     private final Statement statement;
 
     public DatabaseStatement(Connection connection){

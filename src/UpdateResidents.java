@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 
 public class UpdateResidents implements ActionListener  {
-    private final UpdateResidentsUI updateResidentsUI;
+    private UpdateResidentsUI updateResidentsUI;
 
     UpdateResidents(String lastName){
         this.updateResidentsUI = new UpdateResidentsUI(lastName);

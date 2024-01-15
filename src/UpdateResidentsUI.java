@@ -13,7 +13,7 @@ public class UpdateResidentsUI extends MainUI{
     private final JComboBox resGroupBox = new JComboBox(groups);
     private final JButton updateResidentBtn = new JButton("Update Resident");
     private final JButton backBtn = new JButton("Back");
-    public String lastName;
+    private String lastName;
     public JButton getBackBtn() {
         return backBtn;
     }

@@ -5,11 +5,11 @@ import java.awt.*;
 import java.sql.ResultSet;
 
 public class ResidentServiceUI extends MainUI{
-    JTable table = new JTable();
-    JLabel searchLabel = new JLabel("Search a service by group: ");
-    Choice groupName = new Choice();
-    JButton searchBtn = new JButton("Search");
-    JButton backBtn = new JButton("Back");
+    private final JTable table = new JTable();
+    private final JLabel searchLabel = new JLabel("Search a service by group: ");
+    private final Choice groupName = new Choice();
+    private final JButton searchBtn = new JButton("Search");
+    private final JButton backBtn = new JButton("Back");
     private String resident;
     public void setResident(String resName) {
         this.resident = resName;

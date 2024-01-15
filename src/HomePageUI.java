@@ -3,29 +3,29 @@ import java.awt.*;
 
 public class HomePageUI extends MainUI{
 
-    JLabel headingHome= new JLabel("Utility services system");
-    JButton addManager = new JButton("Add Manager");
+    private final JLabel headingHome= new JLabel("Utility services system");
+    private final JButton addManager = new JButton("Add Manager");
     public JButton getAddManagerBtn() {
         return addManager;
     }
-    JButton addResident = new JButton("Add Resident");
+    private final JButton addResident = new JButton("Add Resident");
     public JButton getAddResidentBtn() {
         return addResident;
     }
-    JButton addService = new JButton("Add Service");
+    private final JButton addService = new JButton("Add Service");
     public JButton getAddServiceBtn() {
         return addService;
     }
 
-    JButton viewResidents = new JButton("View residents");
+    private final JButton viewResidents = new JButton("View residents");
     public JButton getViewResidentsBtn() {
         return viewResidents;
     }
-    JButton updateResidents = new JButton("Update resident");
+    private final JButton updateResidents = new JButton("Update resident");
     public JButton getUpdateResidentsBtn() {
         return updateResidents;
     }
-    JButton removeResidents = new JButton("Remove resident");
+    private final JButton removeResidents = new JButton("Remove resident");
     public JButton getRemoveResidentsBtn() {
         return removeResidents;
     }

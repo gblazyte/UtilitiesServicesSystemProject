@@ -5,15 +5,14 @@ import java.awt.event.ItemListener;
 import java.sql.ResultSet;
 
 public class RemoveResidentsUI extends MainUI{
-
-    JLabel lastNameLabel = new JLabel("Resident Last Name: ");
-    JLabel nameLabel = new JLabel("Resident Name: ");
-    JLabel groupLabel = new JLabel("Resident Group: ");
-    JLabel resNameLabel = new JLabel();
-    JLabel resGroupLabel = new JLabel();
-    Choice lastNameChoice = new Choice();
-    JButton removeResidentBtn = new JButton("Remove Resident");
-    JButton backBtn = new JButton("Back");
+    private final JLabel lastNameLabel = new JLabel("Resident Last Name: ");
+    private final JLabel nameLabel = new JLabel("Resident Name: ");
+    private final JLabel groupLabel = new JLabel("Resident Group: ");
+    private final JLabel resNameLabel = new JLabel();
+    private final JLabel resGroupLabel = new JLabel();
+    private final Choice lastNameChoice = new Choice();
+    private final JButton removeResidentBtn = new JButton("Remove Resident");
+    private final JButton backBtn = new JButton("Back");
     public JButton getRemoveResidentBtn() {
         return removeResidentBtn;
     }

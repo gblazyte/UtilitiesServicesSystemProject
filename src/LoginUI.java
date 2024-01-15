@@ -3,11 +3,11 @@ import java.awt.*;
 import java.sql.ResultSet;
 
 public class LoginUI extends MainUI{
-    JLabel usernameLabel = new JLabel("Username");
-    JTextField usernameTextField = new JTextField();
-    JLabel passwordLabel = new JLabel("Password");
-    JTextField passwordTextField = new JTextField();
-    JButton loginButton = new JButton("Login");
+    private final JLabel usernameLabel = new JLabel("Username");
+    private final JTextField usernameTextField = new JTextField();
+    private final JLabel passwordLabel = new JLabel("Password");
+    private final JTextField passwordTextField = new JTextField();
+    private final JButton loginButton = new JButton("Login");
     public JButton getLoginBtn() {
         return loginButton;
     }

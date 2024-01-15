@@ -3,8 +3,8 @@ import java.awt.*;
 
 public class LaunchPageUI extends MainUI{
 
-    JButton button = new JButton("Click to continue!");
-    JLabel headingLabel = new JLabel("Welcome to the utility services website");
+    private final JButton button = new JButton("Click to continue!");
+    private final JLabel headingLabel = new JLabel("Welcome to the utility services website");
     public JButton getBtn() {
         return button;
     }

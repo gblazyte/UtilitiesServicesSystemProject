@@ -7,8 +7,7 @@ import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 
 public class ViewService implements ActionListener {
-
-    private final ViewServiceUI viewServiceUI;
+    private ViewServiceUI viewServiceUI;
     ViewService(){
         this.viewServiceUI = new ViewServiceUI();
         viewServiceUI.getUpdateBtn().addActionListener(this);

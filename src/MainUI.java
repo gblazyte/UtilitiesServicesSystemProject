@@ -10,6 +10,7 @@ public class MainUI {
 
         WindowManager windowManager = new WindowManager();
         windowManager.showWindow(page);
+
         page.getContentPane().setBackground(Color.lightGray);
     }
 }

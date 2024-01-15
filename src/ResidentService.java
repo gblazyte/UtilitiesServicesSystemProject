@@ -4,7 +4,7 @@ import java.awt.event.ActionListener;
 
 
 public class ResidentService implements ActionListener {
-    private final ResidentServiceUI residentServiceUI;
+    private ResidentServiceUI residentServiceUI;
 
     ResidentService(String res){
         this.residentServiceUI = new ResidentServiceUI(res);

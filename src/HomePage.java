@@ -4,9 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class HomePage implements ActionListener {
-
     private final HomePageUI homePageUI;
-
     HomePage(){
         this.homePageUI = new HomePageUI();
         homePageUI.getAddManagerBtn().addActionListener(this);
@@ -17,7 +15,6 @@ public class HomePage implements ActionListener {
         homePageUI.getUpdateResidentsBtn().addActionListener(this);
 
     }
-
     @Override
     public void actionPerformed(ActionEvent e) {
 

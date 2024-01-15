@@ -16,7 +16,6 @@ public class AddResidentDatabase {
             conn.closeConnection();
             statement.closeStatement();
 
-
         }catch (Exception e1){
             e1.printStackTrace();
         }

@@ -2,23 +2,23 @@ import javax.swing.*;
 import java.awt.*;
 
 public class AddServiceUI extends MainUI{
-    JLabel headingSer = new JLabel("Add service details");
-    JLabel servicesLabel = new JLabel("Services: ");
-    private String services[] = {"Heat","Water","Gas", "Electricity", "Recycling"};
-    JComboBox servicesBox = new JComboBox(services);
+    private final JLabel headingSer = new JLabel("Add service details");
+    private final JLabel servicesLabel = new JLabel("Services: ");
+    private final String[] services = {"Heat","Water","Gas", "Electricity", "Recycling"};
+    private final JComboBox servicesBox = new JComboBox(services);
 
-    JLabel priceLabel = new JLabel("Price: ");
-    JTextField priceField = new JTextField();
+    private final JLabel priceLabel = new JLabel("Price: ");
+    private final JTextField priceField = new JTextField();
 
-    JLabel managerLabel = new JLabel("Manager: ");
-    JTextField managerField = new JTextField();
+    private final JLabel managerLabel = new JLabel("Manager: ");
+    private final JTextField managerField = new JTextField();
 
-    JLabel resGroupLabel = new JLabel("Resident Group: ");
-    private String groups[] = {"860","200","440", "633"};
-    JComboBox resGroupBox = new JComboBox(groups);
+    private final JLabel resGroupLabel = new JLabel("Resident Group: ");
+    private final String[] groups = {"860","200","440", "633"};
+    private final JComboBox resGroupBox = new JComboBox(groups);
 
-    JButton addServiceBtn = new JButton("Add Service");
-    JButton backBtn = new JButton("Back");
+    private final JButton addServiceBtn = new JButton("Add Service");
+    private final JButton backBtn = new JButton("Back");
 
     public JButton getBackBtn() {
         return backBtn;
@@ -78,6 +78,5 @@ public class AddServiceUI extends MainUI{
         backBtn.setBounds(450,500,120,40);
         page.getContentPane().add(backBtn);
     }
-
 
 }
